@@ -1,0 +1,25 @@
+# Ignorer les fichiers et répertoires spécifiques à l'environnement local
+*.log              # Fichiers de log
+*.txt              # Fichiers texte temporaires
+*.bak              # Sauvegardes temporaires
+*.swp              # Fichiers de sauvegarde créés par Vim
+
+# Ignorer le dossier de dépendances si vous en utilisez un comme Composer
+/vendor            # Dossier contenant les dépendances de Composer (si utilisé)
+
+/node_modules      # Dossier des modules Node.js (si utilisé)
+
+/.DS_Store         # Fichiers générés par macOS
+Thumbs.db          # Fichiers générés par Windows
+
+# Ignorer les fichiers temporaires d'éditeur de texte
+.idea              # Fichiers générés par PhpStorm ou JetBrains IDE
+.vscode            # Fichiers générés par Visual Studio Code
+
+# Ignorer le dossier des fichiers de cache
+/cache             # Si vous avez un répertoire cache
+/.cache            # Cache de votre application
+
+# Ignorer les fichiers de configuration sensibles
+/config.php        # Fichier contenant la clé API et autres informations sensibles
+/database.php      # Si vous avez une configuration de base de données locale
