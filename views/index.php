@@ -1,9 +1,3 @@
-<?php
-// index.php
-include('../config/config.php');
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,7 +12,7 @@ include('../config/config.php');
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
-		<link rel="stylesheet" href="../assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 		
 		
 		
