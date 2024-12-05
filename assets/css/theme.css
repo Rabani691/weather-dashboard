@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #4CAF50;
+    --text-color: #2C3E50;
+    --bg-color: #ECEFF1;
+    --card-bg: #FFFFFF;
+    --header-bg: #FFFFFF;
+    --border-color: #E0E0E0;
+    --hover-color: #F5F5F5;
+}
+
+.dark-mode {
+    --primary-color: #64b5f6;
+    --text-color: #FFFFFF;
+    --bg-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --header-bg: #2d2d2d;
+    --border-color: #404040;
+    --hover-color: #3d3d3d;
+}
+
+.theme-switch {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#theme-toggle {
+    background: none;
+    border: 2px solid var(--border-color);
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: var(--hover-color);
+}
+
+/* Ajustements pour le mode clair */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.forecast-container {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.forecast {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.site-header {
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Ajustements pour le mode sombre */
+.dark-mode .forecast-container {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode .forecast {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.dark-mode .site-header {
+    background-color: var(--header-bg);
+}
+
+/* Ajustements pour les inputs */
+input[type="text"],
+input[type="submit"] {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+} 
