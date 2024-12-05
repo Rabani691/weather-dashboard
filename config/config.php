@@ -5,3 +5,6 @@ return [
     'units' => 'metric', // Celsius
     'lang' => 'fr' // Langue des descriptions météo
 ];
+
+
+?>

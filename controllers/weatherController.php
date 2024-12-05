@@ -1,5 +1,4 @@
 <?php
-$config = require __DIR__ . '/config.php'; // Charger la configuration
 
 class Weather
 {
@@ -145,31 +144,9 @@ class WeatherController
 // Point d'entrée
 $controller = new WeatherController($config);
 
-if ($_GET['action'] === 'forecast') {
+if (@$_GET['action'] === 'forecast') {
     $controller->fetch5DayForecast();
 } else {
     $controller->fetchWeather();
 }
 
-<?php
-
-function getForecast($city) {
-    $apiKey = $config['api_key']; 
-    $url = "https://api.openweathermap.org/data/2.5/forecast?q={$city}&units=metric&appid={$apiKey}";
-
-    // Initialisation de cURL
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-    $response = curl_exec($ch);
-    curl_close($ch);
-
-    // Vérifier et décoder la réponse
-    if ($response) {
-        return json_decode($response, true);
-    } else {
-        return null;
-    }
-}
-?>

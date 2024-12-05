@@ -18,7 +18,7 @@ include('../config/config.php');
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../assets/css/style.css">
 		
 		
 		
